@@ -8,8 +8,6 @@ License: MIT
 Using turtle program to draw a star
 """
 
-
-
 import turtle
 
 # Ask user for input here.
@@ -25,7 +23,6 @@ while side_len < 0:
     side_len_inp = raw_input("Side length must be greater than 0. Enter a new side length: ")
     side_len = int(side_len_inp)
 
-
 # Now create a graphics window.
 bob = turtle.Pen()
 
@@ -36,14 +33,17 @@ bob.down()
 
 # Put the rest of your code can go here
 
-for x in range(n):
-        bob.forward(side_len)
-        bob.left(180-(180/n))
+y=180.0-(180.0/n)
 
+
+for i in range(n):
+        bob.forward(side_len)
+        bob.left(y)
 
 # Prevent the graphics window from diappearing too
 # quickly to see it.
 stopper = raw_input("Hit <enter> to quit.")
+
 
 # Now remove the graphics window before exiting.
 turtle.bye()
