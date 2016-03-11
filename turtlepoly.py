@@ -1,3 +1,13 @@
+"""
+File: turt.py
+
+Copyright (c) 2016 Gabi Montes De Oca
+
+License: MIT
+
+Using turtle program to draw shapes
+"""
+
 import turtle
 
 # Ask user for input here.

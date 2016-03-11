@@ -1,3 +1,13 @@
+"""
+File: repeated_sqrt.py
+
+Copyright (c) 2016 Gabi Montes De Oca
+
+License: MIT
+
+Using square root function and determining round off error. 
+"""
+
 from math import sqrt
 for n in range(1,60):
     r=2.0

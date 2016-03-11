@@ -1,3 +1,14 @@
+"""
+File: booleans.py
+
+Copyright (c) 2016 Gabi Montes De Oca
+
+License: MIT
+
+Determining whether boolean statements are true or false
+
+"""
+
 c = 41
 c == 40 #false, c does not equal 40
 c != 40 and c < 41 #true, c does not equal 40, is not less than 41

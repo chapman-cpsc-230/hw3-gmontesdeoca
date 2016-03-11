@@ -1,3 +1,15 @@
+"""
+File: turtlestar.py
+
+Copyright (c) 2016 Gabi Montes De Oca
+
+License: MIT
+
+Using turtle program to draw a star
+"""
+
+
+
 import turtle
 
 # Ask user for input here.
@@ -14,18 +26,19 @@ while side_len < 0:
     side_len = int(side_len_inp)
 
 
-def draw_star (t, n, side_len):
-    for i in range(n):
-        t.forward(side_len)
-        t.left(-45)
 # Now create a graphics window.
 bob = turtle.Pen()
 
+bob.up()
+bob.left(180)
+bob.forward(side_len/2.0)
+bob.down()
+
 # Put the rest of your code can go here
 
-for j in range(n):
-    draw_star(bob, n, side_len)
-
+for x in range(n):
+        bob.forward(side_len)
+        bob.left(180-(180/n))
 
 
 # Prevent the graphics window from diappearing too
